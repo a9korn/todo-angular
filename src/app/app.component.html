@@ -1,6 +1,6 @@
-<h1>Привет!</h1>
+<h1>TODO LIST</h1>
 
-<form action="#" (ngSubmit)="onCreate()">
+<form action="#" (ngSubmit)="onCreate()" class="add-form">
   <input type="text" name="title" [(ngModel)]="title">
   <button [disabled]="!title">Add todo</button>
 </form>
@@ -12,3 +12,5 @@
     <span (click)="onRemove(todo)">Delete</span>
   </li>
 </ul>
+
+<app-card></app-card>

@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+}
+
+.add-form {
+    text-align: center;
+}
+
+.add-form>input {
+    padding: 5px;
+}
+.add-form>button {
+    padding: 5px;
+    background-color: limegreen;
+    color: white;
+}

@@ -15,7 +15,6 @@ export class AppComponent implements OnInit {
   constructor(private httpClient: HttpClient) {}
 
   ngOnInit(): void {
-    console.log('INIT');
     this.httpClient.get<Todo[]>(BACKEND_BASE_DOMAIN + '/todos').subscribe((todoList) => {
       this.todoList = todoList;
     });
