@@ -1,0 +1,14 @@
+<h1>Привет!</h1>
+
+<form action="#" (ngSubmit)="onCreate()">
+  <input type="text" name="title" [(ngModel)]="title">
+  <button [disabled]="!title">Add todo</button>
+</form>
+
+<ul>
+  <li *ngFor="let todo of todoList">
+    <input type="checkbox" name="isCompleted" (change)="onComplete(todo)" [checked]="todo.isCompleted">
+    <span>{{todo.title}}</span>
+    <span (click)="onRemove(todo)">Delete</span>
+  </li>
+</ul>
